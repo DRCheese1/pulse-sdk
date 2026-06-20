@@ -33,8 +33,7 @@ export function initPulse(config: PulseConfig): void {
   const { endpoint, apiKey, websiteId, flushIntervalMs = 10_000 } = config;
 
   if (!endpoint || !apiKey || !websiteId) {
-    console.warn("[pulse] initPulse: endpoint, apiKey and websiteId are required.");
-    return;
+    throw new Error("Missing required configuration for Pulse initialization.");
   }
 
   console.debug(`[pulse] init → endpoint: ${endpoint}  websiteId: ${websiteId}  flush: ${flushIntervalMs}ms`);
