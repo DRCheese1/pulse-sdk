@@ -1,0 +1,2 @@
+"use client";import{a as t,b as i,c as n,d as s}from"./chunk-7QJAJDXP.js";import{useEffect as P}from"react";function d(r){return P(()=>{let e=r,{endpoint:o="",apiKey:l="",websiteId:p=""}=e,u=i(e,["endpoint","apiKey","websiteId"]);return n(t({endpoint:o,apiKey:l,websiteId:p},u)),()=>s()},[]),null}export{d as PulseAnalytics};
+//# sourceMappingURL=react.js.map
